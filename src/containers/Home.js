@@ -119,6 +119,10 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (response === "") {
+      return setResponseError("Please enter the message...");
+    }
+    setResponseError("");
     const loggedInUsers =
       JSON.parse(localStorage.getItem("loggedInUsers")) || [];
 
