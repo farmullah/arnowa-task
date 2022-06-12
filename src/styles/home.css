@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  background-color: rgb(9, 66, 97);
+  color: #fff;
+}
+.navbar .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 4rem;
+}
+.middle-section {
+  flex-grow: 1;
+  display: flex;
+  list-style: none;
+  margin-left: 3rem;
+}
+.btnLogout {
+  cursor: pointer;
+}

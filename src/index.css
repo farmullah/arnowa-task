@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-center {
+  justify-content: center;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.w50 {
+  width: 50%;
+}
+
+.form {
+  padding: 2rem 1rem;
+  background: rgb(228, 228, 228);
+  width: 500px;
+  -webkit-box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 0.75);
+}
+
+.form__title {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid rgb(91, 91, 91);
+  padding-bottom: 0.4rem;
+}
+
+.form__container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit__button {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  background: rgb(137 201 7);
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 4px 15px -3px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.submit__button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,27 @@
+.inputelement {
+  display: flex;
+  /* flex-direction: column; */
+  color: #9e9c9c;
+  padding: 10px 10px 10px 10px;
+  justify-content: center;
+}
+.inputelement .wrapper {
+  width: 40%;
+}
+.inputelement .wrapper:nth-child(2){
+  padding-left:15px
+}
+
+.inputelement label {
+  color: rgb(143, 47, 47);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.inputelement .input {
+  border: 2px solid rgb(17, 137, 127);
+  padding: 0.3rem 1rem;
+  margin-top: 5px;
+  outline: none;
+  width: 80%;
+}
