@@ -17,9 +17,12 @@ export const validateEmail = (value) => {
 };
 
 export const validateMobileNumber = (value) => {
-  const regex = /^[6-9]{1}[0-9]{9}$/;
-  if (!regex.test(value)) {
-    return errorMessages.invalidMobileNumber;
+  // const regex = /^[6-9]{1}[0-9]{9}$/;
+  // if (!regex.test(value)) {
+  //   return errorMessages.invalidMobileNumber;
+  // }
+  if (value && value.length === 10) {
+    return "";
   }
-  return "";
+  return errorMessages.invalidMobileNumber;
 };

@@ -43,8 +43,7 @@ const Login = () => {
       case "email":
         return validateEmail(value);
       case "mobileNumber":
-        // validateMobileNumber(value);
-        return null;
+        return validateMobileNumber(value);
       default:
         return false;
     }
