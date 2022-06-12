@@ -141,8 +141,14 @@ const Home = () => {
     if (!user) {
       return navigate("/login");
     }
-    const { difference } = findTimeDifference();
-    setTimeRemaining(difference);
+    const { expiryDate } = getExpiryTime();
+    const { currentDate } = getCurrentTime();
+    if (currentDate > expiryDate) {
+      logout();
+    } else {
+      const { difference } = findTimeDifference();
+      setTimeRemaining(difference);
+    }
   }, []);
 
   return (
