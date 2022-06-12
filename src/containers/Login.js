@@ -113,7 +113,7 @@ const Login = () => {
 
   useEffect(() => {
     const user = localStorage.getItem("user");
-    if (user) navigate("home");
+    if (user) navigate("/home");
   }, []);
 
   return (
